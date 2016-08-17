@@ -1,7 +1,7 @@
 {
   "name": "plugin-block-align",
   "description": "A quick way of aligning markdown blocks in a GitBook.",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "Chris Born",
   "engines": {
     "gitbook": ">=2.0.0"
