@@ -6,7 +6,7 @@ module.exports = {
     blocks: {
       center: {
         process: function(block) {
-          var body = ('<p class="text-center">'
+          var body = ('<p class="ba-text-center">'
           + (block.body)
           + '</p>');
 
