@@ -1,11 +1,11 @@
 {
   "name": "gitbook-plugin-block-align",
   "description": "A quick way of aligning markdown blocks in a GitBook.",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": "Chris Born",
   "license": "Apache-2.0",
   "engines": {
-    "gitbook": ">=2.0.0"
+    "gitbook": ">=3.2.0"
   },
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/pelted/gitbook-plugin-block-align/issues"
   },
-  "homepage": "https://github.com/pelted/gitbook-plugin-block-align#readme"
+  "homepage": "https://github.com/pelted/gitbook-plugin-block-align#readme",
+  "dependencies": {
+    "markup-it": "^2.4.0"
+  }
 }
