@@ -17,10 +17,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pelted/plugin-block-align.git"
+    "url": "git+https://github.com/pelted/gitbook-plugin-block-align.git"
   },
   "bugs": {
-    "url": "https://github.com/pelted/plugin-block-align/issues"
+    "url": "https://github.com/pelted/gitbook-plugin-block-align/issues"
   },
-  "homepage": "https://github.com/pelted/plugin-block-align#readme"
+  "homepage": "https://github.com/pelted/gitbook-plugin-block-align#readme"
 }
