@@ -1,17 +1,29 @@
 # Block align plugin for GitBooks
 
-A quick way of aligning markdown blocks in a GitBook.
+A quick way of aligning markdown blocks in a GitBook. This should work for websites and generated ebooks.
 
-Example:
+GitBook Example:
 
 ```markdown
-{% center %}Some text that should be centered{% endcenter %}
+{% left %} This **will be** aligned left. {% endleft %}
+
+{% right %} This **will be** aligned right. {% endright %}
+
+{% center %} This **will be** centered. {% endcenter %}
 ```
 
 Result:
 
-<p class="text-center">Some text that should be centered</p>
-
 ```html
-<p class="text-center">Some text that should be centered</p>
+<div class="ba-left"><p>This <strong>will be</strong> aligned left.</p></div>
+
+<div class="ba-right"><p>This <strong>will be</strong> aligned right.</p></div>
+
+<div class="ba-center"><p>This <strong>will be</strong> centered.</p></div>
 ```
+
+<div style="text-align: left;"><p>This <strong>will be</strong> aligned left.</p></div>
+
+<div style="text-align: right;"><p>This <strong>will be</strong> aligned right.</p></div>
+
+<div style="text-align: center;"><p>This <strong>will be</strong> centered.</p></div>

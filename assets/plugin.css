@@ -1,3 +1,9 @@
-.ba-text-center {
+.ba-left {
+  text-align: left;
+}
+.ba-right {
+  text-align: right;
+}
+.ba-center {
   text-align: center;
 }

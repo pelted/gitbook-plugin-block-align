@@ -11,22 +11,40 @@ var parseMarkdown = function(text) {
   return parsed;
 };
 
+var wrap = function(block, position='left') {
+  var body = ('<div class="ba-'+ position + '">'
+  + parseMarkdown(block.body)
+  + '</div>');
+
+  return {
+    body: body,
+    parse: true
+  };
+}
+
 module.exports = {
-    book: {
+    website: {
+      assets: './assets',
+      css: [ 'plugin.css' ]
+    },
+    ebook: {
       assets: './assets',
       css: [ 'plugin.css' ]
     },
     blocks: {
+      left: {
+        process: function(block) {
+          return wrap(block, 'left');
+        }
+      },
+      right: {
+        process: function(block) {
+          return wrap(block, 'right');
+        }
+      },
       center: {
         process: function(block) {
-          var body = ('<div class="ba-text-center">'
-          + parseMarkdown(block.body)
-          + '</div>');
-
-          return {
-            body: body,
-            parse: true
-          };
+          return wrap(block, 'center');
         }
       }
     }
