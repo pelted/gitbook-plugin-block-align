@@ -2,6 +2,9 @@
 
 A quick way of aligning markdown blocks in a GitBook. This should work for websites and generated ebooks.
 
+**Intent**: Collaborators may not know anything about HTML so it is easier to explain one syntax (Markdown with Blocks)
+than expect non technical users to keep `<div>, <p>` tags with text alignment styles in their headspace too.
+
 GitBook Example:
 
 ```markdown
