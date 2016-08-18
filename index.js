@@ -5,13 +5,13 @@ var htmlSyntax = require('markup-it/syntaxes/html');
 var markdown = new MarkupIt(markdownSyntax);
 var html = new MarkupIt(htmlSyntax);
 
-var parseMarkdown = function(text) {
+function parseMarkdown (text) {
   md = markdown.toContent(text);
   parsed = html.toText(md);
   return parsed;
 };
 
-var wrap = function(block, position='left') {
+function wrap (block, position) {
   var body = ('<div class="ba-'+ position + '">'
   + parseMarkdown(block.body)
   + '</div>');
